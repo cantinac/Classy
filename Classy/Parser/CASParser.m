@@ -778,10 +778,23 @@ NSInteger const CASParseErrorFileContents = 2;
     return nil;
 }
 
-- (Class)swiftClassFromString:(NSString *)className {
-	NSString *appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
-	NSString *classStringName = [NSString stringWithFormat:@"_TtC%d%@%d%@", appName.length, appName, className.length, className];
-	return NSClassFromString(classStringName);
+- (Class)swiftClassFromString:(NSString *)fullTokenizedClassName {
+    NSString *moduleName = nil;
+    NSString *className = nil;
+    
+    NSArray *namespaceAndClassName = [fullTokenizedClassName componentsSeparatedByString:@"/"];
+    if([namespaceAndClassName count] > 1) {
+        moduleName = namespaceAndClassName.firstObject;
+        className = namespaceAndClassName.lastObject;
+    } else {
+        moduleName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+        className = namespaceAndClassName.firstObject;
+    }
+    
+    unsigned int modLength = (unsigned int)moduleName.length;
+    unsigned int classLength = (unsigned int)className.length;
+    NSString *classStringName = [NSString stringWithFormat:@"_TtC%d%@%d%@", modLength, moduleName, classLength, className];
+    return NSClassFromString(classStringName);
 }
 
 

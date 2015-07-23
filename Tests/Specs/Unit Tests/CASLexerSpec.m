@@ -217,6 +217,11 @@ SpecBegin(CASLexer)
     expect(lexer.peekToken.type).to.equal(CASTokenTypeRef);
     expect(lexer.peekToken.value).to.equal(@"@_background-_color");
     expect(lexer.str).to.equal(@"   hello");
+    
+    lexer = [[CASLexer alloc] initWithString:@"ClassyTests/CASLexer swift namespaces wooooo"];
+    expect(lexer.peekToken.type).to.equal(CASTokenTypeRef);
+    expect(lexer.peekToken.value).to.equal(@"ClassyTests/CASLexer");
+    expect(lexer.str).to.equal(@" swift namespaces wooooo");
 }
 
 - (void)testSkipComments {

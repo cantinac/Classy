@@ -77,8 +77,9 @@ NSString * const CASParseFailingStringErrorKey = @"CASParseFailingStringErrorKey
         // true | false | YES | NO
         @(CASTokenTypeBoolean)   : @[ CASRegex(@"^(true|false|YES|NO)\\b([ \\t]*)") ],
 
-        // optional `@` | `-` then at least one `_a-zA-Z$` following by any alphanumeric char or `-` or `$`
-        @(CASTokenTypeRef)       : @[ CASRegex(@"^(@)?(-*[_a-zA-Z$][-\\w\\d$]*)") ],
+        // optional `@` | `-` then at least one `_a-zA-Z$`, followed by any alphanumeric char or `-` or `$`,
+        // with an optional `/` followed by any alphanumeric char or `-` or `$` separating module and class names.
+        @(CASTokenTypeRef)       : @[ CASRegex(@"^(@)?(-*[_a-zA-Z$](?:\\/?[_a-zA-Z$]{1,})*[-\\w\\d$]*)") ],
 
         // tests if string looks like math operation
         @(CASTokenTypeOperator)  : @[ CASRegex(@"^([.]{2,3}|&&|\\|\\||[!<>=?:]=|\\*\\*|[-+*\\/%%]=?|[,=?:!~<>&\\[\\]])([ \\t]*)") ],
