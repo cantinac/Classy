@@ -170,9 +170,20 @@ NSInteger const CASParseErrorFileContents = 2;
             }
 
             [_importedFileNames addObject:fileName];
-            NSString *filePath = [[self.filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:fileName];
+            CASParser *parser = nil;
+            NSArray *pathComponents = [fileName componentsSeparatedByString:@"/"];
             NSError *importError = nil;
-            CASParser *parser = [CASParser parserFromFilePath:filePath variables:self.styleVars error:&importError];
+            if ([pathComponents count] > 1 && [[pathComponents objectAtIndex:1] componentsSeparatedByString: @"."] > 1) {
+                NSBundle *bundle = [NSBundle bundleWithIdentifier: [pathComponents objectAtIndex:0]];
+                NSArray *comps = [pathComponents subarrayWithRange: NSMakeRange(1, [pathComponents count] - 1)];
+                NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:[comps componentsJoinedByString:@"/"]];
+                parser = [CASParser parserFromFilePath:path variables:self.styleVars error:&importError];
+
+            } else {
+                NSString *filePath = [[self.filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:fileName];
+                parser = [CASParser parserFromFilePath:filePath variables:self.styleVars error:&importError];
+            }
+            
             if (importError) {
                 if (error) {
                     *error = importError;
