@@ -178,7 +178,7 @@ NSInteger const CASParseErrorFileContents = 2;
                 NSArray *comps = [pathComponents subarrayWithRange: NSMakeRange(1, [pathComponents count] - 1)];
                 NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:[comps componentsJoinedByString:@"/"]];
                 parser = [CASParser parserFromFilePath:path variables:self.styleVars error:&importError];
-
+                [_importedFileNames removeObject:fileName];
             } else {
                 NSString *filePath = [[self.filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:fileName];
                 parser = [CASParser parserFromFilePath:filePath variables:self.styleVars error:&importError];
