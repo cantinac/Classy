@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578307B21BC5625300A951ED /* Classy.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307B11BC5625300A951ED /* Classy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308011BC5636A00A951ED /* CASExpressionSolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307B91BC5636A00A951ED /* CASExpressionSolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308021BC5636A00A951ED /* CASExpressionSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307BA1BC5636A00A951ED /* CASExpressionSolver.m */; settings = {ASSET_TAGS = (); }; };
+		578308031BC5636A00A951ED /* CASInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307BB1BC5636A00A951ED /* CASInvocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308041BC5636A00A951ED /* CASInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307BC1BC5636A00A951ED /* CASInvocation.m */; settings = {ASSET_TAGS = (); }; };
+		578308051BC5636A00A951ED /* CASLexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307BD1BC5636A00A951ED /* CASLexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308061BC5636A00A951ED /* CASLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307BE1BC5636A00A951ED /* CASLexer.m */; settings = {ASSET_TAGS = (); }; };
+		578308071BC5636A00A951ED /* CASParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307BF1BC5636A00A951ED /* CASParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308081BC5636A00A951ED /* CASParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307C01BC5636A00A951ED /* CASParser.m */; settings = {ASSET_TAGS = (); }; };
+		578308091BC5636A00A951ED /* CASDeviceSelectorItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307C11BC5636A00A951ED /* CASDeviceSelectorItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783080A1BC5636A00A951ED /* CASDeviceOSVersionItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307C21BC5636A00A951ED /* CASDeviceOSVersionItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783080B1BC5636A00A951ED /* CASDeviceOSVersionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307C31BC5636A00A951ED /* CASDeviceOSVersionItem.m */; settings = {ASSET_TAGS = (); }; };
+		5783080C1BC5636A00A951ED /* CASDeviceTypeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307C41BC5636A00A951ED /* CASDeviceTypeItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783080D1BC5636A00A951ED /* CASDeviceTypeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307C51BC5636A00A951ED /* CASDeviceTypeItem.m */; settings = {ASSET_TAGS = (); }; };
+		5783080E1BC5636A00A951ED /* CASDeviceSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307C61BC5636A00A951ED /* CASDeviceSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783080F1BC5636A00A951ED /* CASDeviceSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307C71BC5636A00A951ED /* CASDeviceSelector.m */; settings = {ASSET_TAGS = (); }; };
+		578308101BC5636A00A951ED /* CASStyleNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307C81BC5636A00A951ED /* CASStyleNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308111BC5636A00A951ED /* CASStyleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307C91BC5636A00A951ED /* CASStyleNode.m */; settings = {ASSET_TAGS = (); }; };
+		578308121BC5636A00A951ED /* CASStyleProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307CA1BC5636A00A951ED /* CASStyleProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308131BC5636A00A951ED /* CASStyleProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307CB1BC5636A00A951ED /* CASStyleProperty.m */; settings = {ASSET_TAGS = (); }; };
+		578308141BC5636A00A951ED /* CASStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307CC1BC5636A00A951ED /* CASStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308151BC5636A00A951ED /* CASStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307CD1BC5636A00A951ED /* CASStyler.m */; settings = {ASSET_TAGS = (); }; };
+		578308161BC5636A00A951ED /* CASStyleSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307CE1BC5636A00A951ED /* CASStyleSelector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308171BC5636A00A951ED /* CASStyleSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307CF1BC5636A00A951ED /* CASStyleSelector.m */; settings = {ASSET_TAGS = (); }; };
+		578308181BC5636A00A951ED /* CASToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307D01BC5636A00A951ED /* CASToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308191BC5636A00A951ED /* CASToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307D11BC5636A00A951ED /* CASToken.m */; settings = {ASSET_TAGS = (); }; };
+		5783081A1BC5636A00A951ED /* CASTextAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307D21BC5636A00A951ED /* CASTextAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783081B1BC5636A00A951ED /* CASTextAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307D31BC5636A00A951ED /* CASTextAttributes.m */; settings = {ASSET_TAGS = (); }; };
+		5783081C1BC5636A00A951ED /* CASUnitToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307D41BC5636A00A951ED /* CASUnitToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783081D1BC5636A00A951ED /* CASUnitToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307D51BC5636A00A951ED /* CASUnitToken.m */; settings = {ASSET_TAGS = (); }; };
+		5783081E1BC5636A00A951ED /* CASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307D61BC5636A00A951ED /* CASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783081F1BC5636A00A951ED /* CASUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307D71BC5636A00A951ED /* CASUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		578308201BC5636A00A951ED /* CASStyleableItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307D91BC5636A00A951ED /* CASStyleableItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308211BC5636A00A951ED /* CASStyleableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307DA1BC5636A00A951ED /* CASStyleableItem.m */; settings = {ASSET_TAGS = (); }; };
+		578308221BC5636A00A951ED /* CASStyleClassUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307DB1BC5636A00A951ED /* CASStyleClassUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308231BC5636A00A951ED /* CASStyleClassUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307DC1BC5636A00A951ED /* CASStyleClassUtilities.m */; settings = {ASSET_TAGS = (); }; };
+		578308241BC5636A00A951ED /* NSObject+CASSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307DD1BC5636A00A951ED /* NSObject+CASSwizzle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308251BC5636A00A951ED /* NSObject+CASSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307DE1BC5636A00A951ED /* NSObject+CASSwizzle.m */; settings = {ASSET_TAGS = (); }; };
+		578308261BC5636A00A951ED /* NSRegularExpression+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307DF1BC5636A00A951ED /* NSRegularExpression+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308271BC5636A00A951ED /* NSRegularExpression+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307E01BC5636A00A951ED /* NSRegularExpression+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308281BC5636A00A951ED /* NSString+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307E11BC5636A00A951ED /* NSString+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308291BC5636A00A951ED /* NSString+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307E21BC5636A00A951ED /* NSString+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783082A1BC5636A00A951ED /* UIColor+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307E31BC5636A00A951ED /* UIColor+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783082B1BC5636A00A951ED /* UIColor+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307E41BC5636A00A951ED /* UIColor+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783082C1BC5636A00A951ED /* UITextField+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307E51BC5636A00A951ED /* UITextField+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783082D1BC5636A00A951ED /* UITextField+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307E61BC5636A00A951ED /* UITextField+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783082E1BC5636A00A951ED /* UIView+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307E71BC5636A00A951ED /* UIView+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783082F1BC5636A00A951ED /* UIView+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307E81BC5636A00A951ED /* UIView+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308301BC5636A00A951ED /* UIBarItem+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307E91BC5636A00A951ED /* UIBarItem+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308311BC5636A00A951ED /* UIBarItem+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307EA1BC5636A00A951ED /* UIBarItem+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308321BC5636A00A951ED /* UINavigationBar+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307EB1BC5636A00A951ED /* UINavigationBar+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308331BC5636A00A951ED /* UINavigationBar+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307EC1BC5636A00A951ED /* UINavigationBar+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308341BC5636A00A951ED /* UITabBar+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307ED1BC5636A00A951ED /* UITabBar+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308351BC5636A00A951ED /* UITabBar+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307EE1BC5636A00A951ED /* UITabBar+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308361BC5636A00A951ED /* UIToolbar+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307EF1BC5636A00A951ED /* UIToolbar+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308371BC5636A00A951ED /* UIToolbar+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307F01BC5636A00A951ED /* UIToolbar+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		578308381BC5636A00A951ED /* UIViewController+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307F11BC5636A00A951ED /* UIViewController+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308391BC5636A00A951ED /* UIViewController+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307F21BC5636A00A951ED /* UIViewController+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783083A1BC5636A00A951ED /* UISlider+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307F31BC5636A00A951ED /* UISlider+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783083B1BC5636A00A951ED /* UISlider+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307F41BC5636A00A951ED /* UISlider+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783083C1BC5636A00A951ED /* UINavigationItem+CASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307F51BC5636A00A951ED /* UINavigationItem+CASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783083D1BC5636A00A951ED /* UINavigationItem+CASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307F61BC5636A00A951ED /* UINavigationItem+CASAdditions.m */; settings = {ASSET_TAGS = (); }; };
+		5783083E1BC5636A00A951ED /* CASArgumentDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307F81BC5636A00A951ED /* CASArgumentDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783083F1BC5636A00A951ED /* CASArgumentDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307F91BC5636A00A951ED /* CASArgumentDescriptor.m */; settings = {ASSET_TAGS = (); }; };
+		578308401BC5636A00A951ED /* CASPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307FA1BC5636A00A951ED /* CASPropertyDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308411BC5636A00A951ED /* CASPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307FB1BC5636A00A951ED /* CASPropertyDescriptor.m */; settings = {ASSET_TAGS = (); }; };
+		578308421BC5636A00A951ED /* CASRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307FC1BC5636A00A951ED /* CASRuntimeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308431BC5636A00A951ED /* CASRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307FD1BC5636A00A951ED /* CASRuntimeExtensions.m */; settings = {ASSET_TAGS = (); }; };
+		578308441BC5636A00A951ED /* CASObjectClassDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 578307FE1BC5636A00A951ED /* CASObjectClassDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		578308451BC5636A00A951ED /* CASObjectClassDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 578307FF1BC5636A00A951ED /* CASObjectClassDescriptor.m */; settings = {ASSET_TAGS = (); }; };
+		578308471BC5662A00A951ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578308461BC5662A00A951ED /* Foundation.framework */; };
+		578308491BC5663000A951ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578308481BC5663000A951ED /* UIKit.framework */; };
+		5783084C1BC5711500A951ED /* CASDeviceScreenSizeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5783084A1BC5711500A951ED /* CASDeviceScreenSizeItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5783084D1BC5711500A951ED /* CASDeviceScreenSizeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5783084B1BC5711500A951ED /* CASDeviceScreenSizeItem.m */; settings = {ASSET_TAGS = (); }; };
+		578308561BC571A300A951ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 578308551BC571A300A951ED /* main.m */; };
+		578308591BC571A300A951ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 578308581BC571A300A951ED /* AppDelegate.m */; };
+		5783085C1BC571A300A951ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5783085B1BC571A300A951ED /* ViewController.m */; };
+		5783085F1BC571A300A951ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5783085D1BC571A300A951ED /* Main.storyboard */; };
+		578308611BC571A300A951ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 578308601BC571A300A951ED /* Assets.xcassets */; };
+		578308641BC571A300A951ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578308621BC571A300A951ED /* LaunchScreen.storyboard */; };
+		5783086F1BC5726700A951ED /* Classy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578307AE1BC5625300A951ED /* Classy.framework */; };
+		578308731BC5730C00A951ED /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = 578308711BC5730C00A951ED /* stylesheet.cas */; settings = {ASSET_TAGS = (); }; };
+		578308741BC5730C00A951ED /* variables.cas in Resources */ = {isa = PBXBuildFile; fileRef = 578308721BC5730C00A951ED /* variables.cas */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57ADA1651BC5738F00D6E198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 578307A51BC5625300A951ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578307AD1BC5625300A951ED;
+			remoteInfo = Classy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		578307AE1BC5625300A951ED /* Classy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Classy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578307B11BC5625300A951ED /* Classy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Classy.h; sourceTree = "<group>"; };
+		578307B31BC5625300A951ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578307B91BC5636A00A951ED /* CASExpressionSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASExpressionSolver.h; sourceTree = "<group>"; };
+		578307BA1BC5636A00A951ED /* CASExpressionSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASExpressionSolver.m; sourceTree = "<group>"; };
+		578307BB1BC5636A00A951ED /* CASInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASInvocation.h; sourceTree = "<group>"; };
+		578307BC1BC5636A00A951ED /* CASInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASInvocation.m; sourceTree = "<group>"; };
+		578307BD1BC5636A00A951ED /* CASLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASLexer.h; sourceTree = "<group>"; };
+		578307BE1BC5636A00A951ED /* CASLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASLexer.m; sourceTree = "<group>"; };
+		578307BF1BC5636A00A951ED /* CASParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASParser.h; sourceTree = "<group>"; };
+		578307C01BC5636A00A951ED /* CASParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASParser.m; sourceTree = "<group>"; };
+		578307C11BC5636A00A951ED /* CASDeviceSelectorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASDeviceSelectorItem.h; sourceTree = "<group>"; };
+		578307C21BC5636A00A951ED /* CASDeviceOSVersionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASDeviceOSVersionItem.h; sourceTree = "<group>"; };
+		578307C31BC5636A00A951ED /* CASDeviceOSVersionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASDeviceOSVersionItem.m; sourceTree = "<group>"; };
+		578307C41BC5636A00A951ED /* CASDeviceTypeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASDeviceTypeItem.h; sourceTree = "<group>"; };
+		578307C51BC5636A00A951ED /* CASDeviceTypeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASDeviceTypeItem.m; sourceTree = "<group>"; };
+		578307C61BC5636A00A951ED /* CASDeviceSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASDeviceSelector.h; sourceTree = "<group>"; };
+		578307C71BC5636A00A951ED /* CASDeviceSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASDeviceSelector.m; sourceTree = "<group>"; };
+		578307C81BC5636A00A951ED /* CASStyleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyleNode.h; sourceTree = "<group>"; };
+		578307C91BC5636A00A951ED /* CASStyleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyleNode.m; sourceTree = "<group>"; };
+		578307CA1BC5636A00A951ED /* CASStyleProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyleProperty.h; sourceTree = "<group>"; };
+		578307CB1BC5636A00A951ED /* CASStyleProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyleProperty.m; sourceTree = "<group>"; };
+		578307CC1BC5636A00A951ED /* CASStyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyler.h; sourceTree = "<group>"; };
+		578307CD1BC5636A00A951ED /* CASStyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyler.m; sourceTree = "<group>"; };
+		578307CE1BC5636A00A951ED /* CASStyleSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyleSelector.h; sourceTree = "<group>"; };
+		578307CF1BC5636A00A951ED /* CASStyleSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyleSelector.m; sourceTree = "<group>"; };
+		578307D01BC5636A00A951ED /* CASToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASToken.h; sourceTree = "<group>"; };
+		578307D11BC5636A00A951ED /* CASToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASToken.m; sourceTree = "<group>"; };
+		578307D21BC5636A00A951ED /* CASTextAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASTextAttributes.h; sourceTree = "<group>"; };
+		578307D31BC5636A00A951ED /* CASTextAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASTextAttributes.m; sourceTree = "<group>"; };
+		578307D41BC5636A00A951ED /* CASUnitToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASUnitToken.h; sourceTree = "<group>"; };
+		578307D51BC5636A00A951ED /* CASUnitToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASUnitToken.m; sourceTree = "<group>"; };
+		578307D61BC5636A00A951ED /* CASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASUtilities.h; sourceTree = "<group>"; };
+		578307D71BC5636A00A951ED /* CASUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASUtilities.m; sourceTree = "<group>"; };
+		578307D91BC5636A00A951ED /* CASStyleableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyleableItem.h; sourceTree = "<group>"; };
+		578307DA1BC5636A00A951ED /* CASStyleableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyleableItem.m; sourceTree = "<group>"; };
+		578307DB1BC5636A00A951ED /* CASStyleClassUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASStyleClassUtilities.h; sourceTree = "<group>"; };
+		578307DC1BC5636A00A951ED /* CASStyleClassUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASStyleClassUtilities.m; sourceTree = "<group>"; };
+		578307DD1BC5636A00A951ED /* NSObject+CASSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CASSwizzle.h"; sourceTree = "<group>"; };
+		578307DE1BC5636A00A951ED /* NSObject+CASSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CASSwizzle.m"; sourceTree = "<group>"; };
+		578307DF1BC5636A00A951ED /* NSRegularExpression+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+CASAdditions.h"; sourceTree = "<group>"; };
+		578307E01BC5636A00A951ED /* NSRegularExpression+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+CASAdditions.m"; sourceTree = "<group>"; };
+		578307E11BC5636A00A951ED /* NSString+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CASAdditions.h"; sourceTree = "<group>"; };
+		578307E21BC5636A00A951ED /* NSString+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CASAdditions.m"; sourceTree = "<group>"; };
+		578307E31BC5636A00A951ED /* UIColor+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CASAdditions.h"; sourceTree = "<group>"; };
+		578307E41BC5636A00A951ED /* UIColor+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CASAdditions.m"; sourceTree = "<group>"; };
+		578307E51BC5636A00A951ED /* UITextField+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CASAdditions.h"; sourceTree = "<group>"; };
+		578307E61BC5636A00A951ED /* UITextField+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CASAdditions.m"; sourceTree = "<group>"; };
+		578307E71BC5636A00A951ED /* UIView+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CASAdditions.h"; sourceTree = "<group>"; };
+		578307E81BC5636A00A951ED /* UIView+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CASAdditions.m"; sourceTree = "<group>"; };
+		578307E91BC5636A00A951ED /* UIBarItem+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+CASAdditions.h"; sourceTree = "<group>"; };
+		578307EA1BC5636A00A951ED /* UIBarItem+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+CASAdditions.m"; sourceTree = "<group>"; };
+		578307EB1BC5636A00A951ED /* UINavigationBar+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+CASAdditions.h"; sourceTree = "<group>"; };
+		578307EC1BC5636A00A951ED /* UINavigationBar+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CASAdditions.m"; sourceTree = "<group>"; };
+		578307ED1BC5636A00A951ED /* UITabBar+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CASAdditions.h"; sourceTree = "<group>"; };
+		578307EE1BC5636A00A951ED /* UITabBar+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CASAdditions.m"; sourceTree = "<group>"; };
+		578307EF1BC5636A00A951ED /* UIToolbar+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+CASAdditions.h"; sourceTree = "<group>"; };
+		578307F01BC5636A00A951ED /* UIToolbar+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+CASAdditions.m"; sourceTree = "<group>"; };
+		578307F11BC5636A00A951ED /* UIViewController+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CASAdditions.h"; sourceTree = "<group>"; };
+		578307F21BC5636A00A951ED /* UIViewController+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CASAdditions.m"; sourceTree = "<group>"; };
+		578307F31BC5636A00A951ED /* UISlider+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+CASAdditions.h"; sourceTree = "<group>"; };
+		578307F41BC5636A00A951ED /* UISlider+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+CASAdditions.m"; sourceTree = "<group>"; };
+		578307F51BC5636A00A951ED /* UINavigationItem+CASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+CASAdditions.h"; sourceTree = "<group>"; };
+		578307F61BC5636A00A951ED /* UINavigationItem+CASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+CASAdditions.m"; sourceTree = "<group>"; };
+		578307F81BC5636A00A951ED /* CASArgumentDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASArgumentDescriptor.h; sourceTree = "<group>"; };
+		578307F91BC5636A00A951ED /* CASArgumentDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASArgumentDescriptor.m; sourceTree = "<group>"; };
+		578307FA1BC5636A00A951ED /* CASPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASPropertyDescriptor.h; sourceTree = "<group>"; };
+		578307FB1BC5636A00A951ED /* CASPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASPropertyDescriptor.m; sourceTree = "<group>"; };
+		578307FC1BC5636A00A951ED /* CASRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASRuntimeExtensions.h; sourceTree = "<group>"; };
+		578307FD1BC5636A00A951ED /* CASRuntimeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASRuntimeExtensions.m; sourceTree = "<group>"; };
+		578307FE1BC5636A00A951ED /* CASObjectClassDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASObjectClassDescriptor.h; sourceTree = "<group>"; };
+		578307FF1BC5636A00A951ED /* CASObjectClassDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASObjectClassDescriptor.m; sourceTree = "<group>"; };
+		578308461BC5662A00A951ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		578308481BC5663000A951ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5783084A1BC5711500A951ED /* CASDeviceScreenSizeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CASDeviceScreenSizeItem.h; sourceTree = "<group>"; };
+		5783084B1BC5711500A951ED /* CASDeviceScreenSizeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CASDeviceScreenSizeItem.m; sourceTree = "<group>"; };
+		578308521BC571A300A951ED /* classfw-link-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "classfw-link-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		578308551BC571A300A951ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		578308571BC571A300A951ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		578308581BC571A300A951ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5783085A1BC571A300A951ED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5783085B1BC571A300A951ED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5783085E1BC571A300A951ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		578308601BC571A300A951ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		578308631BC571A300A951ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		578308651BC571A300A951ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		578308711BC5730C00A951ED /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stylesheet.cas; sourceTree = "<group>"; };
+		578308721BC5730C00A951ED /* variables.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = variables.cas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		578307AA1BC5625300A951ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578308491BC5663000A951ED /* UIKit.framework in Frameworks */,
+				578308471BC5662A00A951ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5783084F1BC571A300A951ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5783086F1BC5726700A951ED /* Classy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578307A41BC5625300A951ED = {
+			isa = PBXGroup;
+			children = (
+				578307B01BC5625300A951ED /* ClassyFW */,
+				578307D81BC5636A00A951ED /* Parser */,
+				578307F71BC5636A00A951ED /* Additions */,
+				578308001BC5636A00A951ED /* Reflection */,
+				578308691BC571B000A951ED /* Frameworks */,
+				578308531BC571A300A951ED /* classfw-link-test */,
+				578307AF1BC5625300A951ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		578307AF1BC5625300A951ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578307AE1BC5625300A951ED /* Classy.framework */,
+				578308521BC571A300A951ED /* classfw-link-test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		578307B01BC5625300A951ED /* ClassyFW */ = {
+			isa = PBXGroup;
+			children = (
+				578307B31BC5625300A951ED /* Info.plist */,
+				578307B11BC5625300A951ED /* Classy.h */,
+			);
+			path = ClassyFW;
+			sourceTree = "<group>";
+		};
+		578307D81BC5636A00A951ED /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				578307C21BC5636A00A951ED /* CASDeviceOSVersionItem.h */,
+				578307C31BC5636A00A951ED /* CASDeviceOSVersionItem.m */,
+				5783084A1BC5711500A951ED /* CASDeviceScreenSizeItem.h */,
+				5783084B1BC5711500A951ED /* CASDeviceScreenSizeItem.m */,
+				578307C11BC5636A00A951ED /* CASDeviceSelectorItem.h */,
+				578307C41BC5636A00A951ED /* CASDeviceTypeItem.h */,
+				578307C51BC5636A00A951ED /* CASDeviceTypeItem.m */,
+				578307C61BC5636A00A951ED /* CASDeviceSelector.h */,
+				578307C71BC5636A00A951ED /* CASDeviceSelector.m */,
+				578307B91BC5636A00A951ED /* CASExpressionSolver.h */,
+				578307BA1BC5636A00A951ED /* CASExpressionSolver.m */,
+				578307BB1BC5636A00A951ED /* CASInvocation.h */,
+				578307BC1BC5636A00A951ED /* CASInvocation.m */,
+				578307BD1BC5636A00A951ED /* CASLexer.h */,
+				578307BE1BC5636A00A951ED /* CASLexer.m */,
+				578307BF1BC5636A00A951ED /* CASParser.h */,
+				578307C01BC5636A00A951ED /* CASParser.m */,
+				578307C81BC5636A00A951ED /* CASStyleNode.h */,
+				578307C91BC5636A00A951ED /* CASStyleNode.m */,
+				578307CA1BC5636A00A951ED /* CASStyleProperty.h */,
+				578307CB1BC5636A00A951ED /* CASStyleProperty.m */,
+				578307CC1BC5636A00A951ED /* CASStyler.h */,
+				578307CD1BC5636A00A951ED /* CASStyler.m */,
+				578307CE1BC5636A00A951ED /* CASStyleSelector.h */,
+				578307CF1BC5636A00A951ED /* CASStyleSelector.m */,
+				578307D01BC5636A00A951ED /* CASToken.h */,
+				578307D11BC5636A00A951ED /* CASToken.m */,
+				578307D21BC5636A00A951ED /* CASTextAttributes.h */,
+				578307D31BC5636A00A951ED /* CASTextAttributes.m */,
+				578307D41BC5636A00A951ED /* CASUnitToken.h */,
+				578307D51BC5636A00A951ED /* CASUnitToken.m */,
+				578307D61BC5636A00A951ED /* CASUtilities.h */,
+				578307D71BC5636A00A951ED /* CASUtilities.m */,
+			);
+			name = Parser;
+			path = ../Classy/Parser;
+			sourceTree = "<group>";
+		};
+		578307F71BC5636A00A951ED /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				578307D91BC5636A00A951ED /* CASStyleableItem.h */,
+				578307DA1BC5636A00A951ED /* CASStyleableItem.m */,
+				578307DB1BC5636A00A951ED /* CASStyleClassUtilities.h */,
+				578307DC1BC5636A00A951ED /* CASStyleClassUtilities.m */,
+				578307DD1BC5636A00A951ED /* NSObject+CASSwizzle.h */,
+				578307DE1BC5636A00A951ED /* NSObject+CASSwizzle.m */,
+				578307DF1BC5636A00A951ED /* NSRegularExpression+CASAdditions.h */,
+				578307E01BC5636A00A951ED /* NSRegularExpression+CASAdditions.m */,
+				578307E11BC5636A00A951ED /* NSString+CASAdditions.h */,
+				578307E21BC5636A00A951ED /* NSString+CASAdditions.m */,
+				578307E31BC5636A00A951ED /* UIColor+CASAdditions.h */,
+				578307E41BC5636A00A951ED /* UIColor+CASAdditions.m */,
+				578307E51BC5636A00A951ED /* UITextField+CASAdditions.h */,
+				578307E61BC5636A00A951ED /* UITextField+CASAdditions.m */,
+				578307E71BC5636A00A951ED /* UIView+CASAdditions.h */,
+				578307E81BC5636A00A951ED /* UIView+CASAdditions.m */,
+				578307E91BC5636A00A951ED /* UIBarItem+CASAdditions.h */,
+				578307EA1BC5636A00A951ED /* UIBarItem+CASAdditions.m */,
+				578307EB1BC5636A00A951ED /* UINavigationBar+CASAdditions.h */,
+				578307EC1BC5636A00A951ED /* UINavigationBar+CASAdditions.m */,
+				578307ED1BC5636A00A951ED /* UITabBar+CASAdditions.h */,
+				578307EE1BC5636A00A951ED /* UITabBar+CASAdditions.m */,
+				578307EF1BC5636A00A951ED /* UIToolbar+CASAdditions.h */,
+				578307F01BC5636A00A951ED /* UIToolbar+CASAdditions.m */,
+				578307F11BC5636A00A951ED /* UIViewController+CASAdditions.h */,
+				578307F21BC5636A00A951ED /* UIViewController+CASAdditions.m */,
+				578307F31BC5636A00A951ED /* UISlider+CASAdditions.h */,
+				578307F41BC5636A00A951ED /* UISlider+CASAdditions.m */,
+				578307F51BC5636A00A951ED /* UINavigationItem+CASAdditions.h */,
+				578307F61BC5636A00A951ED /* UINavigationItem+CASAdditions.m */,
+			);
+			name = Additions;
+			path = ../Classy/Additions;
+			sourceTree = "<group>";
+		};
+		578308001BC5636A00A951ED /* Reflection */ = {
+			isa = PBXGroup;
+			children = (
+				578307F81BC5636A00A951ED /* CASArgumentDescriptor.h */,
+				578307F91BC5636A00A951ED /* CASArgumentDescriptor.m */,
+				578307FA1BC5636A00A951ED /* CASPropertyDescriptor.h */,
+				578307FB1BC5636A00A951ED /* CASPropertyDescriptor.m */,
+				578307FC1BC5636A00A951ED /* CASRuntimeExtensions.h */,
+				578307FD1BC5636A00A951ED /* CASRuntimeExtensions.m */,
+				578307FE1BC5636A00A951ED /* CASObjectClassDescriptor.h */,
+				578307FF1BC5636A00A951ED /* CASObjectClassDescriptor.m */,
+			);
+			name = Reflection;
+			path = ../Classy/Reflection;
+			sourceTree = "<group>";
+		};
+		578308531BC571A300A951ED /* classfw-link-test */ = {
+			isa = PBXGroup;
+			children = (
+				578308701BC5730C00A951ED /* Stylesheets */,
+				578308571BC571A300A951ED /* AppDelegate.h */,
+				578308581BC571A300A951ED /* AppDelegate.m */,
+				5783085A1BC571A300A951ED /* ViewController.h */,
+				5783085B1BC571A300A951ED /* ViewController.m */,
+				5783085D1BC571A300A951ED /* Main.storyboard */,
+				578308601BC571A300A951ED /* Assets.xcassets */,
+				578308621BC571A300A951ED /* LaunchScreen.storyboard */,
+				578308651BC571A300A951ED /* Info.plist */,
+				578308541BC571A300A951ED /* Supporting Files */,
+			);
+			path = "classfw-link-test";
+			sourceTree = "<group>";
+		};
+		578308541BC571A300A951ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				578308551BC571A300A951ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		578308691BC571B000A951ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578308481BC5663000A951ED /* UIKit.framework */,
+				578308461BC5662A00A951ED /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		578308701BC5730C00A951ED /* Stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				578308711BC5730C00A951ED /* stylesheet.cas */,
+				578308721BC5730C00A951ED /* variables.cas */,
+			);
+			path = Stylesheets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		578307AB1BC5625300A951ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578307B21BC5625300A951ED /* Classy.h in Headers */,
+				5783080A1BC5636A00A951ED /* CASDeviceOSVersionItem.h in Headers */,
+				5783084C1BC5711500A951ED /* CASDeviceScreenSizeItem.h in Headers */,
+				5783080E1BC5636A00A951ED /* CASDeviceSelector.h in Headers */,
+				578308091BC5636A00A951ED /* CASDeviceSelectorItem.h in Headers */,
+				5783080C1BC5636A00A951ED /* CASDeviceTypeItem.h in Headers */,
+				578308011BC5636A00A951ED /* CASExpressionSolver.h in Headers */,
+				578308071BC5636A00A951ED /* CASParser.h in Headers */,
+				578308161BC5636A00A951ED /* CASStyleSelector.h in Headers */,
+				578308141BC5636A00A951ED /* CASStyler.h in Headers */,
+				5783081A1BC5636A00A951ED /* CASTextAttributes.h in Headers */,
+				578308181BC5636A00A951ED /* CASToken.h in Headers */,
+				5783081E1BC5636A00A951ED /* CASUtilities.h in Headers */,
+				578308031BC5636A00A951ED /* CASInvocation.h in Headers */,
+				5783081C1BC5636A00A951ED /* CASUnitToken.h in Headers */,
+				578308121BC5636A00A951ED /* CASStyleProperty.h in Headers */,
+				578308101BC5636A00A951ED /* CASStyleNode.h in Headers */,
+				578308051BC5636A00A951ED /* CASLexer.h in Headers */,
+				578308201BC5636A00A951ED /* CASStyleableItem.h in Headers */,
+				578308221BC5636A00A951ED /* CASStyleClassUtilities.h in Headers */,
+				578308241BC5636A00A951ED /* NSObject+CASSwizzle.h in Headers */,
+				578308261BC5636A00A951ED /* NSRegularExpression+CASAdditions.h in Headers */,
+				578308281BC5636A00A951ED /* NSString+CASAdditions.h in Headers */,
+				578308301BC5636A00A951ED /* UIBarItem+CASAdditions.h in Headers */,
+				5783082A1BC5636A00A951ED /* UIColor+CASAdditions.h in Headers */,
+				578308321BC5636A00A951ED /* UINavigationBar+CASAdditions.h in Headers */,
+				5783083C1BC5636A00A951ED /* UINavigationItem+CASAdditions.h in Headers */,
+				5783083A1BC5636A00A951ED /* UISlider+CASAdditions.h in Headers */,
+				578308341BC5636A00A951ED /* UITabBar+CASAdditions.h in Headers */,
+				5783082C1BC5636A00A951ED /* UITextField+CASAdditions.h in Headers */,
+				578308361BC5636A00A951ED /* UIToolbar+CASAdditions.h in Headers */,
+				5783082E1BC5636A00A951ED /* UIView+CASAdditions.h in Headers */,
+				578308381BC5636A00A951ED /* UIViewController+CASAdditions.h in Headers */,
+				5783083E1BC5636A00A951ED /* CASArgumentDescriptor.h in Headers */,
+				578308401BC5636A00A951ED /* CASPropertyDescriptor.h in Headers */,
+				578308441BC5636A00A951ED /* CASObjectClassDescriptor.h in Headers */,
+				578308421BC5636A00A951ED /* CASRuntimeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		578307AD1BC5625300A951ED /* Classy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578307B61BC5625300A951ED /* Build configuration list for PBXNativeTarget "Classy" */;
+			buildPhases = (
+				578307A91BC5625300A951ED /* Sources */,
+				578307AA1BC5625300A951ED /* Frameworks */,
+				578307AB1BC5625300A951ED /* Headers */,
+				578307AC1BC5625300A951ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Classy;
+			productName = ClassyFW;
+			productReference = 578307AE1BC5625300A951ED /* Classy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		578308511BC571A300A951ED /* classfw-link-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 578308661BC571A300A951ED /* Build configuration list for PBXNativeTarget "classfw-link-test" */;
+			buildPhases = (
+				5783084E1BC571A300A951ED /* Sources */,
+				5783084F1BC571A300A951ED /* Frameworks */,
+				578308501BC571A300A951ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57ADA1661BC5738F00D6E198 /* PBXTargetDependency */,
+			);
+			name = "classfw-link-test";
+			productName = "classfw-link-test";
+			productReference = 578308521BC571A300A951ED /* classfw-link-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		578307A51BC5625300A951ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					578307AD1BC5625300A951ED = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					578308511BC571A300A951ED = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 578307A81BC5625300A951ED /* Build configuration list for PBXProject "ClassyFW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 578307A41BC5625300A951ED;
+			productRefGroup = 578307AF1BC5625300A951ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				578307AD1BC5625300A951ED /* Classy */,
+				578308511BC571A300A951ED /* classfw-link-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		578307AC1BC5625300A951ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		578308501BC571A300A951ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578308641BC571A300A951ED /* LaunchScreen.storyboard in Resources */,
+				578308731BC5730C00A951ED /* stylesheet.cas in Resources */,
+				578308611BC571A300A951ED /* Assets.xcassets in Resources */,
+				578308741BC5730C00A951ED /* variables.cas in Resources */,
+				5783085F1BC571A300A951ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		578307A91BC5625300A951ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578308331BC5636A00A951ED /* UINavigationBar+CASAdditions.m in Sources */,
+				578308271BC5636A00A951ED /* NSRegularExpression+CASAdditions.m in Sources */,
+				578308231BC5636A00A951ED /* CASStyleClassUtilities.m in Sources */,
+				5783080D1BC5636A00A951ED /* CASDeviceTypeItem.m in Sources */,
+				5783082D1BC5636A00A951ED /* UITextField+CASAdditions.m in Sources */,
+				578308251BC5636A00A951ED /* NSObject+CASSwizzle.m in Sources */,
+				578308171BC5636A00A951ED /* CASStyleSelector.m in Sources */,
+				5783081F1BC5636A00A951ED /* CASUtilities.m in Sources */,
+				5783080B1BC5636A00A951ED /* CASDeviceOSVersionItem.m in Sources */,
+				5783082F1BC5636A00A951ED /* UIView+CASAdditions.m in Sources */,
+				5783083B1BC5636A00A951ED /* UISlider+CASAdditions.m in Sources */,
+				578308291BC5636A00A951ED /* NSString+CASAdditions.m in Sources */,
+				578308021BC5636A00A951ED /* CASExpressionSolver.m in Sources */,
+				578308411BC5636A00A951ED /* CASPropertyDescriptor.m in Sources */,
+				578308131BC5636A00A951ED /* CASStyleProperty.m in Sources */,
+				578308191BC5636A00A951ED /* CASToken.m in Sources */,
+				578308451BC5636A00A951ED /* CASObjectClassDescriptor.m in Sources */,
+				5783080F1BC5636A00A951ED /* CASDeviceSelector.m in Sources */,
+				578308311BC5636A00A951ED /* UIBarItem+CASAdditions.m in Sources */,
+				578308211BC5636A00A951ED /* CASStyleableItem.m in Sources */,
+				578308041BC5636A00A951ED /* CASInvocation.m in Sources */,
+				578308151BC5636A00A951ED /* CASStyler.m in Sources */,
+				578308081BC5636A00A951ED /* CASParser.m in Sources */,
+				578308061BC5636A00A951ED /* CASLexer.m in Sources */,
+				5783081B1BC5636A00A951ED /* CASTextAttributes.m in Sources */,
+				578308371BC5636A00A951ED /* UIToolbar+CASAdditions.m in Sources */,
+				5783083D1BC5636A00A951ED /* UINavigationItem+CASAdditions.m in Sources */,
+				578308111BC5636A00A951ED /* CASStyleNode.m in Sources */,
+				578308391BC5636A00A951ED /* UIViewController+CASAdditions.m in Sources */,
+				578308351BC5636A00A951ED /* UITabBar+CASAdditions.m in Sources */,
+				5783081D1BC5636A00A951ED /* CASUnitToken.m in Sources */,
+				578308431BC5636A00A951ED /* CASRuntimeExtensions.m in Sources */,
+				5783084D1BC5711500A951ED /* CASDeviceScreenSizeItem.m in Sources */,
+				5783082B1BC5636A00A951ED /* UIColor+CASAdditions.m in Sources */,
+				5783083F1BC5636A00A951ED /* CASArgumentDescriptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5783084E1BC571A300A951ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5783085C1BC571A300A951ED /* ViewController.m in Sources */,
+				578308591BC571A300A951ED /* AppDelegate.m in Sources */,
+				578308561BC571A300A951ED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57ADA1661BC5738F00D6E198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578307AD1BC5625300A951ED /* Classy */;
+			targetProxy = 57ADA1651BC5738F00D6E198 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5783085D1BC571A300A951ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5783085E1BC571A300A951ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		578308621BC571A300A951ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				578308631BC571A300A951ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		578307B41BC5625300A951ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		578307B51BC5625300A951ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		578307B71BC5625300A951ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ClassyFW/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Classy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		578307B81BC5625300A951ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ClassyFW/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Classy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		578308671BC571A300A951ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "classfw-link-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.classfw-link-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		578308681BC571A300A951ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "classfw-link-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.classfw-link-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		578307A81BC5625300A951ED /* Build configuration list for PBXProject "ClassyFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578307B41BC5625300A951ED /* Debug */,
+				578307B51BC5625300A951ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578307B61BC5625300A951ED /* Build configuration list for PBXNativeTarget "Classy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578307B71BC5625300A951ED /* Debug */,
+				578307B81BC5625300A951ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		578308661BC571A300A951ED /* Build configuration list for PBXNativeTarget "classfw-link-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578308671BC571A300A951ED /* Debug */,
+				578308681BC571A300A951ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 578307A51BC5625300A951ED /* Project object */;
+}

@@ -8,7 +8,12 @@
 //
 
 #import "CASRuntimeExtensions.h"
+
+#import <Foundation/Foundation.h>
+
 #import <objc/runtime.h>
+
+#import <stdio.h>
 
 cas_propertyAttributes *cas_copyPropertyAttributes (objc_property_t property) {
     const char * const attrString = property_getAttributes(property);
