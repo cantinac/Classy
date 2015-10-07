@@ -173,7 +173,7 @@ NSInteger const CASParseErrorFileContents = 2;
             CASParser *parser = nil;
             NSArray *pathComponents = [fileName componentsSeparatedByString:@"/"];
             NSError *importError = nil;
-            if ([pathComponents count] > 1 && [[pathComponents objectAtIndex:1] componentsSeparatedByString: @"."] > 1) {
+            if ([pathComponents count] > 1 && [[[pathComponents objectAtIndex:1] componentsSeparatedByString: @"."] count] > 1) {
                 NSBundle *bundle = [NSBundle bundleWithIdentifier: [pathComponents objectAtIndex:0]];
                 NSArray *comps = [pathComponents subarrayWithRange: NSMakeRange(1, [pathComponents count] - 1)];
                 NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:[comps componentsJoinedByString:@"/"]];
