@@ -50,3 +50,10 @@ FOUNDATION_EXPORT const unsigned char ClassyVersionString[];
 #import <Classy/UINavigationBar+CASAdditions.h>
 #import <Classy/UITabBar+CASAdditions.h>
 #import <Classy/UIToolBar+CASAdditions.h>
+
+#import <Classy/NSObject+CASSwizzle.h>
+#import <Classy/NSRegularExpression+CASAdditions.h>
+#import <Classy/NSString+CASAdditions.h>
+#import <Classy/UINavigationItem+CASAdditions.h>
+#import <Classy/UISlider+CASAdditions.h>
+#import <Classy/UIViewController+CASAdditions.h>
