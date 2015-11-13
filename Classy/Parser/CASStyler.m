@@ -49,6 +49,7 @@ NSArray *ClassGetSubclasses(Class parentClass) {
 @property (nonatomic, strong) NSHashTable *scheduledItems;
 @property (nonatomic, strong) NSTimer *updateTimer;
 @property (nonatomic, strong) NSMutableArray *fileWatchers;
+@property (nonatomic, strong) NSDictionary *ancillaryWatchBundleFileMap;
 @property (nonatomic, strong) NSMutableArray *invocationObjectArguments;
 @property (nonatomic, strong) NSMutableDictionary *styleClassIndex;
 @property (nonatomic, strong) NSMutableDictionary *objectClassIndex;
@@ -74,6 +75,7 @@ NSArray *ClassGetSubclasses(Class parentClass) {
     self.objectClassDescriptorCache = NSMapTable.strongToStrongObjectsMapTable;
     self.scheduledItems = [NSHashTable hashTableWithOptions:NSHashTableWeakMemory];
     self.fileWatchers = NSMutableArray.new;
+    self.ancillaryWatchBundleFileMap = nil;
     self.styleClassIndex = [NSMutableDictionary new];
     self.objectClassIndex = [NSMutableDictionary new];
     [self setupObjectClassDescriptors];
@@ -138,7 +140,10 @@ NSArray *ClassGetSubclasses(Class parentClass) {
     self.styleClassIndex = [NSMutableDictionary new];
     self.objectClassIndex = [NSMutableDictionary new];
     
-    CASParser *parser = [CASParser parserFromFilePath:filePath variables:self.variables error:error];
+    CASParser *parser = [CASParser parserFromFilePath:filePath
+                                            variables:self.variables
+                          ancillaryWatchBundleFileMap:self.ancillaryWatchBundleFileMap
+                                                error:error];
     NSArray *styleNodes = parser.styleNodes;
     
     if (self.watchFilePath) {
@@ -146,12 +151,29 @@ NSArray *ClassGetSubclasses(Class parentClass) {
             dispatch_source_cancel(source);
         }
         [self.fileWatchers removeAllObjects];
-        [self reloadOnChangesToFilePath:self.watchFilePath];
+
+
         NSString *directoryPath = [self.watchFilePath stringByDeletingLastPathComponent];
         for (NSString *fileName in parser.importedFileNames) {
+
             NSString *resolvedPath = [directoryPath stringByAppendingPathComponent:fileName];
-            [self reloadOnChangesToFilePath:resolvedPath];
+            if ([[NSFileManager defaultManager] fileExistsAtPath:resolvedPath]) {
+
+                [self reloadOnChangesToFilePath:resolvedPath];
+
+            } else if (self.ancillaryWatchBundleFileMap != NULL) {
+                
+                NSString *ancillaryPath = [self.ancillaryWatchBundleFileMap valueForKey:fileName];
+                if (ancillaryPath == NULL) continue;
+                if ([[NSFileManager defaultManager] fileExistsAtPath:ancillaryPath]) {
+                    
+                    [self reloadOnChangesToFilePath:ancillaryPath];
+
+                }
+            }
         }
+        
+        [self reloadOnChangesToFilePath:self.watchFilePath];
     }
     
     
@@ -741,7 +763,13 @@ NSArray *ClassGetSubclasses(Class parentClass) {
 #pragma mark - file watcher
 
 - (void)setWatchFilePath:(NSString *)watchFilePath {
+    [self setWatchFilePath:watchFilePath withAncillaryWatchBundleFileMap:nil];
+}
+
+- (void)setWatchFilePath:(NSString *)watchFilePath withAncillaryWatchBundleFileMap:(NSDictionary *)ancillaryWatchBundleFileMap
+{
     _watchFilePath = watchFilePath;
+    self.ancillaryWatchBundleFileMap = ancillaryWatchBundleFileMap;
     self.filePath = watchFilePath;
 }
 
@@ -750,7 +778,7 @@ NSArray *ClassGetSubclasses(Class parentClass) {
         dispatch_async(dispatch_get_main_queue(), ^{
             // reload styles
             _filePath = nil;
-            self.filePath = _watchFilePath;
+            [self setWatchFilePath:_watchFilePath withAncillaryWatchBundleFileMap:_ancillaryWatchBundleFileMap];
 
             // reapply styles
             for (UIWindow *window in UIApplication.sharedApplication.windows) {

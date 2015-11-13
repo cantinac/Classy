@@ -8,18 +8,21 @@
 
 #import "CASAppDelegate.h"
 #import "CASRootViewController.h"
-#import "Classy.h"
 
 @implementation CASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 
-#if TARGET_IPHONE_SIMULATOR
+    #if TARGET_IPHONE_SIMULATOR
     // get absolute file path of stylesheet, using relative path
     NSString *absoluteFilePath = CASAbsoluteFilePath(@"Stylesheets/stylesheet.cas");
-    [CASStyler defaultStyler].watchFilePath = absoluteFilePath;
-#endif
+    [[CASStyler defaultStyler]
+     setWatchFilePath:absoluteFilePath
+     withAncillaryWatchBundleFileMap:
+     @{ @"com.yourcompany.other/other.cas": CASAbsoluteFilePath(@"../other/other/OtherStyleSheets/other.cas")
+        }];;
+    #endif
     
     
     // Move files to caches directory for referencing in stylesheet

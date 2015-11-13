@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		4E506422190EF2F8003A03B0 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E506421190EF2F8003A03B0 /* Ball.png */; };
+		5795C1441BF62D7C0020071D /* CASCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54AA1814EF41003BF9C6 /* CASCatalogViewController.m */; };
+		5795C1451BF62D7C0020071D /* CASSimpleFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54A71814EF07003BF9C6 /* CASSimpleFormViewController.m */; };
+		5795C1461BF62D7C0020071D /* CASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAB257A1814BBBB00F3DAAE /* CASAppDelegate.m */; };
+		5795C1471BF62D7C0020071D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAB25761814BBBB00F3DAAE /* main.m */; };
+		5795C1481BF62D7C0020071D /* CASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54A41814EBBC003BF9C6 /* CASRootViewController.m */; };
+		5795C14A1BF62D7C0020071D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB256C1814BBBB00F3DAAE /* CoreGraphics.framework */; };
+		5795C14B1BF62D7C0020071D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB256E1814BBBB00F3DAAE /* UIKit.framework */; };
+		5795C14C1BF62D7C0020071D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAB256A1814BBBB00F3DAAE /* Foundation.framework */; };
+		5795C14F1BF62D7C0020071D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDAB25731814BBBB00F3DAAE /* InfoPlist.strings */; };
+		5795C1501BF62D7C0020071D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAB257C1814BBBB00F3DAAE /* Images.xcassets */; };
+		5795C1511BF62D7C0020071D /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD61F4431816370F004A8777 /* stylesheet.cas */; };
+		5795C1521BF62D7C0020071D /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E506421190EF2F8003A03B0 /* Ball.png */; };
+		5795C1541BF62D7C0020071D /* variables.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD355BDA183E9CD30071E543 /* variables.cas */; };
+		5795C15B1BF62DEF0020071D /* Classy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5795C13C1BF62D510020071D /* Classy.framework */; };
+		5795C15C1BF62DEF0020071D /* Classy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5795C13C1BF62D510020071D /* Classy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5795C17E1BF630A00020071D /* other.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5795C17A1BF6302A0020071D /* other.framework */; };
+		5795C17F1BF630A00020071D /* other.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5795C17A1BF6302A0020071D /* other.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA23251D9EB84FA09338B05C /* libPods-ClassyExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C8ED2DF59B45B2A38549AB /* libPods-ClassyExample.a */; };
 		DD355BDB183E9CD30071E543 /* variables.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD355BDA183E9CD30071E543 /* variables.cas */; };
 		DD61F4441816370F004A8777 /* stylesheet.cas in Resources */ = {isa = PBXBuildFile; fileRef = DD61F4431816370F004A8777 /* stylesheet.cas */; };
@@ -23,9 +40,66 @@
 		DDFE54AB1814EF41003BF9C6 /* CASCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFE54AA1814EF41003BF9C6 /* CASCatalogViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5795C13B1BF62D510020071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5795C1361BF62D510020071D /* ClassyFW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 578307AE1BC5625300A951ED;
+			remoteInfo = Classy;
+		};
+		5795C13D1BF62D510020071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5795C1361BF62D510020071D /* ClassyFW.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 578308521BC571A300A951ED;
+			remoteInfo = "classfw-link-test";
+		};
+		5795C15D1BF62DEF0020071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5795C1361BF62D510020071D /* ClassyFW.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 578307AD1BC5625300A951ED;
+			remoteInfo = Classy;
+		};
+		5795C1791BF6302A0020071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5795C1751BF630290020071D /* other.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5795C16A1BF630290020071D;
+			remoteInfo = other;
+		};
+		5795C1801BF630A10020071D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5795C1751BF630290020071D /* other.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5795C1691BF630290020071D;
+			remoteInfo = other;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5795C15F1BF62DF00020071D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5795C15C1BF62DEF0020071D /* Classy.framework in Embed Frameworks */,
+				5795C17F1BF630A00020071D /* other.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		48E145992C14547713B2A546 /* Pods-ClassyExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassyExample.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ClassyExample/Pods-ClassyExample.release.xcconfig"; sourceTree = "<group>"; };
 		4E506421190EF2F8003A03B0 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		5795C1361BF62D510020071D /* ClassyFW.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ClassyFW.xcodeproj; path = ../ClassyFW/ClassyFW.xcodeproj; sourceTree = "<group>"; };
+		5795C1591BF62D7C0020071D /* ClassyExample-fw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClassyExample-fw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5795C15A1BF62D7D0020071D /* ClassyExample copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ClassyExample copy-Info.plist"; path = "/Users/greymouser/Projects/cantina/Projects/jet/repos/Classy/Example/ClassyExample copy-Info.plist"; sourceTree = "<absolute>"; };
+		5795C1751BF630290020071D /* other.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = other.xcodeproj; path = other/other.xcodeproj; sourceTree = "<group>"; };
 		DD355BDA183E9CD30071E543 /* variables.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = variables.cas; sourceTree = "<group>"; };
 		DD61F4431816370F004A8777 /* stylesheet.cas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stylesheet.cas; sourceTree = "<group>"; };
 		DDAB25671814BBBB00F3DAAE /* ClassyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +125,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5795C1491BF62D7C0020071D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5795C14A1BF62D7C0020071D /* CoreGraphics.framework in Frameworks */,
+				5795C14B1BF62D7C0020071D /* UIKit.framework in Frameworks */,
+				5795C17E1BF630A00020071D /* other.framework in Frameworks */,
+				5795C14C1BF62D7C0020071D /* Foundation.framework in Frameworks */,
+				5795C15B1BF62DEF0020071D /* Classy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDAB25641814BBBB00F3DAAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +157,23 @@
 				4E506421190EF2F8003A03B0 /* Ball.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		5795C1371BF62D510020071D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5795C13C1BF62D510020071D /* Classy.framework */,
+				5795C13E1BF62D510020071D /* classfw-link-test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5795C1761BF630290020071D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5795C17A1BF6302A0020071D /* other.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		57F2FC965CA90A3F5402D7F6 /* Pods */ = {
@@ -94,10 +197,13 @@
 		DDAB255E1814BBBB00F3DAAE = {
 			isa = PBXGroup;
 			children = (
+				5795C1751BF630290020071D /* other.xcodeproj */,
+				5795C1361BF62D510020071D /* ClassyFW.xcodeproj */,
 				DDAB25701814BBBB00F3DAAE /* ClassyExample */,
 				DDAB25691814BBBB00F3DAAE /* Frameworks */,
 				DDAB25681814BBBB00F3DAAE /* Products */,
 				57F2FC965CA90A3F5402D7F6 /* Pods */,
+				5795C15A1BF62D7D0020071D /* ClassyExample copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				DDAB25671814BBBB00F3DAAE /* ClassyExample.app */,
+				5795C1591BF62D7C0020071D /* ClassyExample-fw.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +261,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5795C1411BF62D7C0020071D /* ClassyExample-fw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5795C1561BF62D7C0020071D /* Build configuration list for PBXNativeTarget "ClassyExample-fw" */;
+			buildPhases = (
+				5795C1421BF62D7C0020071D /* Check Pods Manifest.lock */,
+				5795C1431BF62D7C0020071D /* Sources */,
+				5795C1491BF62D7C0020071D /* Frameworks */,
+				5795C14E1BF62D7C0020071D /* Resources */,
+				5795C1551BF62D7C0020071D /* Copy Pods Resources */,
+				5795C15F1BF62DF00020071D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5795C15E1BF62DEF0020071D /* PBXTargetDependency */,
+				5795C1811BF630A10020071D /* PBXTargetDependency */,
+			);
+			name = "ClassyExample-fw";
+			productName = ClassyExample;
+			productReference = 5795C1591BF62D7C0020071D /* ClassyExample-fw.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DDAB25661814BBBB00F3DAAE /* ClassyExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDAB25931814BBBB00F3DAAE /* Build configuration list for PBXNativeTarget "ClassyExample" */;
@@ -193,14 +322,61 @@
 			mainGroup = DDAB255E1814BBBB00F3DAAE;
 			productRefGroup = DDAB25681814BBBB00F3DAAE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5795C1371BF62D510020071D /* Products */;
+					ProjectRef = 5795C1361BF62D510020071D /* ClassyFW.xcodeproj */;
+				},
+				{
+					ProductGroup = 5795C1761BF630290020071D /* Products */;
+					ProjectRef = 5795C1751BF630290020071D /* other.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DDAB25661814BBBB00F3DAAE /* ClassyExample */,
+				5795C1411BF62D7C0020071D /* ClassyExample-fw */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5795C13C1BF62D510020071D /* Classy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Classy.framework;
+			remoteRef = 5795C13B1BF62D510020071D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5795C13E1BF62D510020071D /* classfw-link-test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "classfw-link-test.app";
+			remoteRef = 5795C13D1BF62D510020071D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5795C17A1BF6302A0020071D /* other.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = other.framework;
+			remoteRef = 5795C1791BF6302A0020071D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		5795C14E1BF62D7C0020071D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5795C14F1BF62D7C0020071D /* InfoPlist.strings in Resources */,
+				5795C1501BF62D7C0020071D /* Images.xcassets in Resources */,
+				5795C1511BF62D7C0020071D /* stylesheet.cas in Resources */,
+				5795C1521BF62D7C0020071D /* Ball.png in Resources */,
+				5795C1541BF62D7C0020071D /* variables.cas in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDAB25651814BBBB00F3DAAE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,9 +422,51 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		5795C1421BF62D7C0020071D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5795C1551BF62D7C0020071D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ClassyExample/Pods-ClassyExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5795C1431BF62D7C0020071D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5795C1441BF62D7C0020071D /* CASCatalogViewController.m in Sources */,
+				5795C1451BF62D7C0020071D /* CASSimpleFormViewController.m in Sources */,
+				5795C1461BF62D7C0020071D /* CASAppDelegate.m in Sources */,
+				5795C1471BF62D7C0020071D /* main.m in Sources */,
+				5795C1481BF62D7C0020071D /* CASRootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDAB25631814BBBB00F3DAAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +481,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5795C15E1BF62DEF0020071D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Classy;
+			targetProxy = 5795C15D1BF62DEF0020071D /* PBXContainerItemProxy */;
+		};
+		5795C1811BF630A10020071D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = other;
+			targetProxy = 5795C1801BF630A10020071D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DDAB25731814BBBB00F3DAAE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -275,6 +506,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5795C1571BF62D7C0020071D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFFC5792B76551874EEB57A6 /* Pods-ClassyExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyExample/ClassyExample-Prefix.pch";
+				INFOPLIST_FILE = "ClassyExample copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5795C1581BF62D7C0020071D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48E145992C14547713B2A546 /* Pods-ClassyExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassyExample/ClassyExample-Prefix.pch";
+				INFOPLIST_FILE = "ClassyExample copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		DDAB25911814BBBB00F3DAAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -382,6 +647,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5795C1561BF62D7C0020071D /* Build configuration list for PBXNativeTarget "ClassyExample-fw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5795C1571BF62D7C0020071D /* Debug */,
+				5795C1581BF62D7C0020071D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDAB25621814BBBB00F3DAAE /* Build configuration list for PBXProject "ClassyExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

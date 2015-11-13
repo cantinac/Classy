@@ -29,6 +29,9 @@
  *  Only use for debugging on simulator
  */
 @property (nonatomic, copy) NSString *watchFilePath;
+@property (readonly, nonatomic) NSDictionary *ancillaryWatchBundleFileMap;
+- (void)setWatchFilePath:(NSString *)watchFilePath withAncillaryWatchBundleFileMap:(NSDictionary *)ancillaryWatchBundleFileMap;
+
 
 /**
  *  Set file path location of styling data and report any errors

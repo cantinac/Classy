@@ -1,0 +1,5 @@
+$otherColor = red;
+
+UIView.other {
+    background-color: $otherColor;
+}

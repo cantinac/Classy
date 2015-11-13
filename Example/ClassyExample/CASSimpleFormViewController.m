@@ -31,6 +31,11 @@
     v.backgroundColor = [UIColor redColor];
     v.cas_styleClass = @"shadow-view";
     [self.view addSubview:v];
+    
+    UIView *otherView = [[UIView alloc] initWithFrame:CGRectMake(150, 250, 100, 100)];
+    otherView.backgroundColor = [UIColor greenColor];
+    otherView.cas_styleClass = @"other";
+    [self.view addSubview:otherView];
 }
 
 @end

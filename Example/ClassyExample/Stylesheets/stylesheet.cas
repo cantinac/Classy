@@ -1,5 +1,6 @@
 //TODO flesh out example
 @import "variables.cas"
+@import "com.yourcompany.other/other.cas"
 
 UITableView UILabel {
   text-color $main-color
@@ -10,6 +11,8 @@ UITableView UILabel {
 }
 
 UIView.shadow-view {
+    background-color: $main-color;
+
     layer @
         shadow-radius 10
         shadow-opacity 1

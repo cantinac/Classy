@@ -26,6 +26,7 @@ NSInteger const CASParseErrorFileContents = 2;
 @property (nonatomic, strong) NSMutableDictionary *styleVars;
 @property (nonatomic, strong) NSError *error;
 @property (nonatomic, copy) NSString *filePath;
+@property (nonatomic, strong) NSDictionary *ancillaryWatchBundleFileMap;
 
 @end
 
@@ -33,7 +34,18 @@ NSInteger const CASParseErrorFileContents = 2;
     NSMutableSet *_importedFileNames;
 }
 
-+ (CASParser *)parserFromFilePath:(NSString *)filePath variables:(NSDictionary *)variables error:(NSError **)error {
++ (CASParser *)parserFromFilePath:(NSString *)filePath
+                        variables:(NSDictionary *)variables
+                            error:(NSError **)error
+{
+    return [CASParser parserFromFilePath:filePath variables:variables ancillaryWatchBundleFileMap:nil error:error];
+}
+
++ (CASParser *)parserFromFilePath:(NSString *)filePath
+                        variables:(NSDictionary *)variables
+      ancillaryWatchBundleFileMap:(NSDictionary *)ancillaryWatchBundleFileMap
+                            error:(NSError **)error
+{
     NSError *fileError = nil;
     NSString *contents = [NSString stringWithContentsOfFile:filePath
                                                    encoding:NSUTF8StringEncoding
@@ -61,7 +73,8 @@ NSInteger const CASParseErrorFileContents = 2;
     CASParser *parser = CASParser.new;
     parser.filePath = filePath;
     parser.styleVars = NSMutableDictionary.new;
-
+    parser.ancillaryWatchBundleFileMap = ancillaryWatchBundleFileMap;
+    
     //transform variables into tokens
     [variables enumerateKeysAndObjectsUsingBlock:^(NSString *key, id obj, BOOL *stop) {
         if ([obj isKindOfClass:CASStyleProperty.class]) {
@@ -174,11 +187,18 @@ NSInteger const CASParseErrorFileContents = 2;
             NSArray *pathComponents = [fileName componentsSeparatedByString:@"/"];
             NSError *importError = nil;
             if ([pathComponents count] > 1 && [[[pathComponents objectAtIndex:1] componentsSeparatedByString: @"."] count] > 1) {
-                NSBundle *bundle = [NSBundle bundleWithIdentifier: [pathComponents objectAtIndex:0]];
-                NSArray *comps = [pathComponents subarrayWithRange: NSMakeRange(1, [pathComponents count] - 1)];
-                NSString *path = [[bundle resourcePath] stringByAppendingPathComponent:[comps componentsJoinedByString:@"/"]];
+                NSString *path = nil;
+                if (self.ancillaryWatchBundleFileMap != NULL) {
+                    path = [self.ancillaryWatchBundleFileMap valueForKey:fileName];
+                }
+                
+                if (path == NULL) {
+                    NSBundle *bundle = [NSBundle bundleWithIdentifier: [pathComponents objectAtIndex:0]];
+                    NSArray *comps = [pathComponents subarrayWithRange: NSMakeRange(1, [pathComponents count] - 1)];
+                    path = [[bundle resourcePath] stringByAppendingPathComponent:[comps componentsJoinedByString:@"/"]];
+                }
+
                 parser = [CASParser parserFromFilePath:path variables:self.styleVars error:&importError];
-                [_importedFileNames removeObject:fileName];
             } else {
                 NSString *filePath = [[self.filePath stringByDeletingLastPathComponent] stringByAppendingPathComponent:fileName];
                 parser = [CASParser parserFromFilePath:filePath variables:self.styleVars error:&importError];
