@@ -10,6 +10,7 @@
 #import "CASStyler.h"
 #import "UIBarItem+CASAdditions.h"
 #import "NSObject+CASSwizzle.h"
+#import "CASUtilities.h"
 
 @implementation UINavigationItem (CASAdditions)
 

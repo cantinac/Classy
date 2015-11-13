@@ -9,6 +9,7 @@
 #import "CASDeviceSelector.h"
 #import "NSString+CASAdditions.h"
 #import "CASDeviceScreenSizeItem.h"
+#import "CASUtilities.h"
 
 @implementation CASDeviceSelector {
     NSMutableArray *_items;

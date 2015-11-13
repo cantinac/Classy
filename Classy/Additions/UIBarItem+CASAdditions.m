@@ -12,6 +12,7 @@
 #import "NSString+CASAdditions.h"
 #import "CASStyleClassUtilities.h"
 #import "NSObject+CASSwizzle.h"
+#import "CASUtilities.h"
 
 @implementation UIBarItem (CASAdditions)
 

@@ -11,6 +11,7 @@
 #import "NSString+CASAdditions.h"
 #import "UIColor+CASAdditions.h"
 #import "CASUnitToken.h"
+#import "CASUtilities.h"
 
 NSString * const CASParseErrorDomain = @"CASParseErrorDomain";
 NSInteger const CASParseErrorInvalidToken = 1;

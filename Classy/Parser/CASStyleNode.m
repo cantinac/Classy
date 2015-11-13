@@ -7,6 +7,7 @@
 //
 
 #import "CASStyleNode.h"
+#import "CASUtilities.h"
 
 @implementation CASStyleNode {
     NSMutableArray *_styleProperties;

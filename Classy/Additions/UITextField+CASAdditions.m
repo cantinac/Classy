@@ -9,6 +9,7 @@
 #import "UITextField+CASAdditions.h"
 #import <objc/runtime.h>
 #import "NSObject+CASSwizzle.h"
+#import "CASUtilities.h"
 
 @implementation UITextField (CASAdditions)
 

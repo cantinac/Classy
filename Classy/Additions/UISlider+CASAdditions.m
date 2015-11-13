@@ -7,6 +7,7 @@
 //
 
 #import "UISlider+CASAdditions.h"
+#import "CASUtilities.h"
 
 @implementation UISlider (CASAdditions)
 

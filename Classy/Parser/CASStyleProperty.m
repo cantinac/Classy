@@ -9,6 +9,7 @@
 #import "CASStyleProperty.h"
 #import "NSString+CASAdditions.h"
 #import "CASExpressionSolver.h"
+#import "CASUtilities.h"
 
 @interface CASStyleProperty ()
 

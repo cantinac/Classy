@@ -7,6 +7,7 @@
 //
 
 #import "NSString+CASAdditions.h"
+#import "CASUtilities.h"
 
 @implementation NSString (CASAdditions)
 

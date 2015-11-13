@@ -8,6 +8,7 @@
 
 #import "CASArgumentDescriptor.h"
 #import <UIKit/UIKit.h>
+#import "CASUtilities.h"
 
 @interface CASArgumentDescriptor ()
 

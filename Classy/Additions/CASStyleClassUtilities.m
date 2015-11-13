@@ -9,7 +9,7 @@
 #import "CASStyleClassUtilities.h"
 #import <objc/runtime.h>
 #import "CASStyleableItem.h"
-
+#import "CASUtilities.h"
 
 static void *CASStyleClassesKey = &CASStyleClassesKey;
 

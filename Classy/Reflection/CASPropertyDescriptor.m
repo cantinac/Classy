@@ -8,6 +8,7 @@
 
 #import "CASPropertyDescriptor.h"
 #import "NSString+CASAdditions.h"
+#import "CASUtilities.h"
 
 @interface CASPropertyDescriptor ()
 

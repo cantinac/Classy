@@ -6,16 +6,24 @@
 //
 //
 
+#import <UIKit/UIKit.h>
 #import "CASUtilities.h"
 
-#import <UIKit/UIKit.h>
+static void _sCASLog(NSString *str)
+{
+    #ifdef DEBUG
+    NSLog(@"%@", str);
+    #endif
+}
+
+void (*sCASLog) (NSString *str) = _sCASLog;
 
 NSString *_CASAbsoluteFilePath(const char *currentFilePath, NSString *relativeFilePath) {
     NSString *currentDirectory = [[NSString stringWithUTF8String:currentFilePath] stringByDeletingLastPathComponent];
     return [currentDirectory stringByAppendingPathComponent:relativeFilePath];
 }
 
-NSUInteger CASKeyDeviceSystemMajorVersion() {
+NSUInteger CASKeyDeviceSystemMajorVersion() {    
     static NSUInteger _deviceSystemMajorVersion = -1;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+CASAdditions.h"
+#import "CASUtilities.h"
 
 @interface NSString (CASPrivateAdditions)
 - (NSUInteger)cas_hexValue;

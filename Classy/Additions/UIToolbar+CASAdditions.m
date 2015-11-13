@@ -11,6 +11,7 @@
 #import "CASStyler.h"
 #import "UIView+CASAdditions.h"
 #import "UIBarItem+CASAdditions.h"
+#import "CASUtilities.h"
 
 @implementation UIToolbar (CASAdditions)
 

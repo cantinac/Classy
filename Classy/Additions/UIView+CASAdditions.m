@@ -13,6 +13,7 @@
 #import "CASStyler.h"
 #import "NSString+CASAdditions.h"
 #import "CASStyleClassUtilities.h"
+#import "CASUtilities.h"
 
 static void *CASStyleHasBeenUpdatedKey = &CASStyleHasBeenUpdatedKey;
 

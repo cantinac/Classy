@@ -7,6 +7,7 @@
 //
 
 #import "CASDeviceTypeItem.h"
+#import "CASUtilities.h"
 
 @implementation CASDeviceTypeItem
 

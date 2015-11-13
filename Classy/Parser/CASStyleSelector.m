@@ -9,6 +9,7 @@
 #import "CASStyleSelector.h"
 #import "UIView+CASAdditions.h"
 #import "NSString+CASAdditions.h"
+#import "CASUtilities.h"
 
 @implementation CASStyleSelector
 

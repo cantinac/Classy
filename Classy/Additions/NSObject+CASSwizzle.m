@@ -8,6 +8,7 @@
 
 #import "NSObject+CASSwizzle.h"
 #import <objc/runtime.h>
+#import "CASUtilities.h"
 
 @implementation NSObject (CASSwizzle)
 

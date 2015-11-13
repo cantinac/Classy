@@ -7,6 +7,7 @@
 //
 
 #import "CASUnitToken.h"
+#import "CASUtilities.h"
 
 @implementation CASUnitToken
 

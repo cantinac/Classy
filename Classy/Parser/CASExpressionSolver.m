@@ -8,6 +8,7 @@
 
 #import "CASExpressionSolver.h"
 #import "CASToken.h"
+#import "CASUtilities.h"
 
 @interface CASExpressionSolver ()
 

@@ -15,6 +15,8 @@
 
 #import <stdio.h>
 
+#import "CASUtilities.h"
+
 cas_propertyAttributes *cas_copyPropertyAttributes (objc_property_t property) {
     const char * const attrString = property_getAttributes(property);
     if (!attrString) {

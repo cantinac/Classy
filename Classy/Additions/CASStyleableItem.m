@@ -7,5 +7,6 @@
 //
 
 #import "CASStyleableItem.h"
+#import "CASUtilities.h"
 
 NSString *const CASStyleClassSeparator = @" ";

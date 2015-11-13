@@ -7,6 +7,7 @@
 //
 
 #import "CASInvocation.h"
+#import "CASUtilities.h"
 
 @interface CASInvocation ()
 
